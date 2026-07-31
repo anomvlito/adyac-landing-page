@@ -68,26 +68,26 @@ hayan sido definidos, autorizados y acordados por escrito.
 
 ## 5. Plan de trabajo
 
-### Mes 1 — Descubrimiento y fundación
+### Mes 1 — Levantamiento de información, requerimientos y flujo de procesos/arquitectura
 
 - levantamiento y validación de procesos;
 - consolidación de requisitos e historias de usuario;
 - definición de arquitectura, modelo de datos y permisos;
 - priorización y aprobación de la línea base;
-- prototipo navegable y fundación técnica.
+- definición del flujo de procesos y la arquitectura inicial.
 
-### Mes 2 — Desarrollo del núcleo funcional
+### Mes 2 — Desarrollo de MVP funcional básico y validación con usuarios
 
 - autenticación y autorización;
 - inventario y ciclo de vida de estudios;
 - criterios de aceptación, selección y manejo de candidatos;
-- pruebas continuas y demostraciones de avance.
+- pruebas continuas y validación con usuarios.
 
-### Mes 3 — Cierre funcional y puesta en marcha
+### Mes 3 — Puesta en marcha y beta testing
 
 - historias de usuario incluidas en la línea base aprobada;
 - indicadores, alertas y trazabilidad acordados;
-- pruebas de aceptación;
+- beta testing y pruebas de aceptación;
 - correcciones, documentación y capacitación;
 - puesta en marcha y entrega.
 
