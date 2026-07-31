@@ -240,7 +240,7 @@ export default function Home() {
           <div className="teamGrid">
             <article>
               <div className="portrait fabian" aria-hidden="true"><span>FO</span></div>
-              <p>Fundador · Producto y tecnología</p>
+              <p>Cofundador · Producto y ejecución</p>
               <h3>Fabián Ignacio Ortega Llantén</h3>
               <p className="teamBio">
                 Lidera la estrategia de producto y la ejecución de los
@@ -258,7 +258,7 @@ export default function Home() {
             </article>
             <article>
               <div className="portrait rafael" aria-hidden="true"><span>RK</span></div>
-              <p>Socio · Estrategia e investigación</p>
+              <p>Cofundador · Estrategia e investigación</p>
               <h3>Rafael Augusto Kaempfer Dañin</h3>
               <p className="teamBio">
                 Lidera la estrategia de investigación y el análisis de
