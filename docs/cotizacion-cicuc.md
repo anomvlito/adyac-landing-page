@@ -41,18 +41,14 @@ documentación, capacitación y puesta en marcha.
 La línea base funcional se consolidará y aprobará durante el levantamiento. Se
 consideran inicialmente:
 
-1. inventario centralizado de estudios;
-2. estados de preactivación, activo —reclutamiento o seguimiento— y cerrado;
-3. identificación de usuarios, centros, roles y permisos;
-4. registro y actualización de estudios, protocolos y responsables;
-5. criterios de inclusión y exclusión estructurados;
-6. criterios de aceptación, selección y manejo de candidatos, seguimiento;
-7. gestión de cupos para estudios, listas de espera, exámenes previos y alertas;
-8. seguimiento de pretesting y recordatorios;
-9. alertas operativas;
-10. panel de indicadores de reclutamiento, compromisos y actividad;
-11. trazabilidad de acciones relevantes;
-12. datos de demostración, documentación y guía de uso.
+1. identificación de usuarios, centros, roles y permisos;
+2. inventario centralizado y ciclo de vida de los estudios;
+3. registro y actualización de protocolos, responsables y criterios;
+4. criterios de aceptación, selección y manejo de candidatos, seguimiento;
+5. gestión de cupos para estudios, listas de espera, exámenes previos y alertas;
+6. panel de indicadores de reclutamiento, compromisos y actividad;
+7. trazabilidad de acciones relevantes;
+8. datos de demostración, documentación y guía de uso.
 
 Las funciones de inteligencia artificial, procesamiento de voz, integración con
 fichas clínicas y automatización de decisiones clínicas se evaluarán durante el
