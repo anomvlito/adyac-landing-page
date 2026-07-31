@@ -33,8 +33,8 @@ const projects = [
   },
   {
     tag: "Salud pública",
-    title: "Prevención y control del cáncer",
-    client: "CCARM",
+    title: "Centro para la Prevención y el Control del Cáncer",
+    client: "CECAN",
     text: "Soluciones digitales orientadas a transformar información compleja en herramientas de trabajo útiles.",
     tone: "sand",
   },
@@ -243,19 +243,17 @@ export default function Home() {
               <p>Fundador · Producto y tecnología</p>
               <h3>Fabián Ignacio Ortega Llantén</h3>
               <p className="teamBio">
-                Consultor y arquitecto de software enfocado en transformación
-                digital, productos de datos e inteligencia artificial. Lidera
-                en Adyac la arquitectura y el desarrollo end-to-end de
-                plataformas para investigación oncológica, integrando Vue,
-                FastAPI, PostgreSQL y Vercel, además de pipelines con OpenAlex
-                y ORCID, sistemas RAG, NLP y visualización de redes
-                científicas.
+                Lidera la estrategia de producto y la ejecución de los
+                proyectos de Adyac. Traduce necesidades organizacionales en
+                soluciones digitales, coordina el descubrimiento con usuarios
+                y dirige el trabajo desde la definición del problema hasta la
+                puesta en marcha y evolución del producto.
               </p>
               <ul className="expertise" aria-label="Áreas de especialidad de Fabián">
-                <li>Arquitectura de software</li>
-                <li>IA, NLP y RAG</li>
-                <li>Ingeniería de datos</li>
+                <li>Dirección de producto</li>
                 <li>Transformación digital</li>
+                <li>Diseño de soluciones</li>
+                <li>Gestión de proyectos</li>
               </ul>
             </article>
             <article>
@@ -263,19 +261,17 @@ export default function Home() {
               <p>Socio · Estrategia e investigación</p>
               <h3>Rafael Augusto Kaempfer Dañin</h3>
               <p className="teamBio">
-                Ingeniero Civil Industrial UC y Magíster en Ciencias de la
-                Ingeniería, especializado en bioingeniería, fisiología
-                computacional, modelación matemática y gemelos digitales.
-                Investigó dinámicas cardiorrespiratorias bajo hipoxia y
-                ejercicio, y ha colaborado en modelación metabólica y biología
-                cuantitativa con el Instituto de Ingeniería Biológica y Médica
-                UC e Inria, Francia.
+                Lidera la estrategia de investigación y el análisis de
+                problemas complejos en Adyac. Aporta rigor científico al diseño
+                de soluciones, estructura modelos para apoyar decisiones y
+                coordina la validación de resultados con equipos académicos,
+                clínicos y operativos.
               </p>
               <ul className="expertise" aria-label="Áreas de especialidad de Rafael">
-                <li>Modelación computacional</li>
-                <li>Señales fisiológicas</li>
-                <li>Optimización numérica</li>
-                <li>Bioingeniería</li>
+                <li>Estrategia de investigación</li>
+                <li>Modelación de sistemas</li>
+                <li>Validación científica</li>
+                <li>Diseño experimental</li>
               </ul>
             </article>
           </div>
@@ -305,6 +301,7 @@ export default function Home() {
         </a>
         <p>Producto · Diseño · Tecnología</p>
         <div>
+          <a href="https://www.adyac.cl/">www.adyac.cl</a>
           <span>Santiago, Chile</span>
           <span>© {new Date().getFullYear()} Adyac</span>
         </div>
