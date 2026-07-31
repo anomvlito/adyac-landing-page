@@ -26,6 +26,7 @@ html {
 
 body {
   min-width: 320px;
+  overflow-x: hidden;
   color: var(--ink);
   background: var(--paper);
   font-family: var(--font-sans), Arial, sans-serif;
@@ -903,6 +904,21 @@ footer > div {
   .siteHeader {
     height: 66px;
     padding: 0 20px;
+  }
+
+  .siteHeader nav {
+    display: flex;
+    justify-self: end;
+    gap: 12px;
+    font-size: 10px;
+  }
+
+  .siteHeader nav a::after {
+    display: none;
+  }
+
+  .headerCta {
+    display: none;
   }
 
   .brand {
