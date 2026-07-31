@@ -241,14 +241,15 @@ export default function Home() {
             <article>
               <div className="portrait fabian" aria-hidden="true"><span>FO</span></div>
               <p>Fundador · Producto y tecnología</p>
-              <h3>Fabián Ignacio Ortega Llanten</h3>
+              <h3>Fabián Ignacio Ortega Llantén</h3>
               <p className="teamBio">
                 Consultor y arquitecto de software enfocado en transformación
-                digital, productos de datos e inteligencia artificial. Ha
-                liderado el desarrollo end-to-end de plataformas para
-                investigación oncológica, integrando Vue, FastAPI, PostgreSQL y
-                Vercel, además de pipelines con OpenAlex y ORCID, sistemas RAG,
-                NLP y visualización de redes científicas.
+                digital, productos de datos e inteligencia artificial. Lidera
+                en Adyac la arquitectura y el desarrollo end-to-end de
+                plataformas para investigación oncológica, integrando Vue,
+                FastAPI, PostgreSQL y Vercel, además de pipelines con OpenAlex
+                y ORCID, sistemas RAG, NLP y visualización de redes
+                científicas.
               </p>
               <ul className="expertise" aria-label="Áreas de especialidad de Fabián">
                 <li>Arquitectura de software</li>
