@@ -29,8 +29,11 @@
 ## 3. Objeto de la propuesta
 
 Adyac propone diseñar, desarrollar, validar y poner en marcha una plataforma
-web para la gestión centralizada de estudios clínicos oncológicos de CICUC.
-La solución deberá quedar operativa y no se limitará a un prototipo visual.
+web modular para la gestión centralizada de estudios clínicos oncológicos de
+CICUC. La solución contará con APIs documentadas para facilitar la interacción
+de los equipos clínicos y una interoperabilidad gradual con sistemas
+institucionales expresamente autorizados. Deberá quedar operativa y no se
+limitará a un prototipo visual.
 
 El proyecto considera descubrimiento y levantamiento, definición de una línea
 base aprobada de historias de usuario, desarrollo iterativo, pruebas,
@@ -58,6 +61,10 @@ aceptación.
 
 La plataforma servirá como apoyo informativo y operativo. No determinará por sí
 sola la elegibilidad clínica ni sustituirá el juicio profesional.
+
+La interoperabilidad describe una capacidad de evolución del sistema. No
+implica que el MVP incluya integración con ficha clínica u otros sistemas que no
+hayan sido definidos, autorizados y acordados por escrito.
 
 ## 5. Plan de trabajo
 
