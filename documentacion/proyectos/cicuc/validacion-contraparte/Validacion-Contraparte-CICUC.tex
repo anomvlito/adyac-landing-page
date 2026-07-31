@@ -1,0 +1,479 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Inter}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=18mm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{documento-de-validaciuxf3n-con-contraparte--plataforma-cicuc}{%
+\section{Documento de validación con contraparte --- Plataforma
+CICUC}\label{documento-de-validaciuxf3n-con-contraparte--plataforma-cicuc}}
+
+\textbf{Versión:} 1.0\\
+\textbf{Fecha:} 31 de julio de 2026\\
+\textbf{Estado:} Propuesta para revisión clínica, operativa y
+administrativa\\
+\textbf{Proyecto:} Plataforma de gestión de estudios clínicos
+oncológicos CICUC
+
+\begin{quote}
+Este documento busca confirmar procesos, alcance y responsabilidades
+antes de continuar el desarrollo. No autoriza el tratamiento de datos
+clínicos reales, no reemplaza los protocolos oficiales y no permite que
+la plataforma determine elegibilidad clínica.
+\end{quote}
+
+\hypertarget{1-objetivo-de-la-validaciuxf3n}{%
+\subsection{1. Objetivo de la
+validación}\label{1-objetivo-de-la-validaciuxf3n}}
+
+Confirmar con CICUC que el equipo de desarrollo comprendió
+correctamente:
+
+\begin{itemize}
+\tightlist
+\item
+  el problema operacional;
+\item
+  los usuarios y responsables;
+\item
+  el ciclo de vida de los estudios;
+\item
+  la gestión de slots, listas de espera y pretesting;
+\item
+  el alcance del primer producto funcional;
+\item
+  las decisiones institucionales pendientes.
+\end{itemize}
+
+Los acuerdos obtenidos se incorporarán a las historias de usuario,
+criterios de aceptación, diseño y pruebas.
+
+\hypertarget{2-problema-comprendido}{%
+\subsection{2. Problema comprendido}\label{2-problema-comprendido}}
+
+Actualmente, la información sobre estudios puede encontrarse distribuida
+entre PDF, Word, correos y notas. Esto dificulta saber con certeza:
+
+\begin{itemize}
+\tightlist
+\item
+  qué estudios están disponibles;
+\item
+  cuál es su estado;
+\item
+  qué protocolo está vigente;
+\item
+  quién debe actualizar la información;
+\item
+  qué slots, pretests y tareas están pendientes;
+\item
+  qué compromisos de reclutamiento requieren seguimiento.
+\end{itemize}
+
+La necesidad prioritaria es una fuente de verdad operacional,
+actualizada, gobernada y trazable.
+
+\hypertarget{3-resultado-propuesto-para-el-mvp}{%
+\subsection{3. Resultado propuesto para el
+MVP}\label{3-resultado-propuesto-para-el-mvp}}
+
+Un usuario autorizado podrá:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  consultar estudios por patología, línea, biomarcador, centro y estado;
+\item
+  conocer la versión vigente del protocolo y quién la confirmó;
+\item
+  distinguir preactivación, reclutamiento, seguimiento, hold, cierre y
+  archivo;
+\item
+  consultar cohortes, ramas y criterios cargados manualmente;
+\item
+  gestionar slots, lista de espera, pretesting y tareas;
+\item
+  consultar reportes operativos con fecha de corte;
+\item
+  reconstruir cambios relevantes mediante auditoría.
+\end{enumerate}
+
+\hypertarget{4-alcance-que-no-se-propone-para-el-mvp}{%
+\subsection{4. Alcance que no se propone para el
+MVP}\label{4-alcance-que-no-se-propone-para-el-mvp}}
+
+\begin{itemize}
+\tightlist
+\item
+  determinación automática de elegibilidad;
+\item
+  extracción automática de protocolos;
+\item
+  análisis de audio o escucha de comités;
+\item
+  integración con ficha clínica;
+\item
+  mensajería externa;
+\item
+  recomendación o priorización clínica automatizada.
+\end{itemize}
+
+Estas capacidades podrán evaluarse posteriormente con validación humana,
+evidencia trazable, controles de seguridad y aprobación institucional.
+
+\hypertarget{5-ciclo-de-vida-propuesto}{%
+\subsection{5. Ciclo de vida
+propuesto}\label{5-ciclo-de-vida-propuesto}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Estado & Definición propuesta \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Preactivación & Estudio próximo a abrir, potencialmente dentro de unas
+cuatro semanas \\
+Activo reclutando & Estudio abierto y buscando participantes \\
+Activo en seguimiento & No recluta, pero mantiene participantes en
+control \\
+Hold & Reclutamiento temporalmente detenido \\
+Cerrado & Sin reclutamiento ni seguimiento operativo activo \\
+Archivado & Conservado únicamente para trazabilidad e historia \\
+\end{longtable}
+
+El estado del estudio debe permanecer separado de la disponibilidad de
+cupos o slots.
+
+\hypertarget{6-informaciuxf3n-muxednima-del-inventario}{%
+\subsection{6. Información mínima del
+inventario}\label{6-informaciuxf3n-muxednima-del-inventario}}
+
+\begin{itemize}
+\tightlist
+\item
+  código, nombre corto y título oficial;
+\item
+  patrocinador, fase y diseño;
+\item
+  patología, subtipo, escenario y línea;
+\item
+  cohortes, ramas y biomarcadores;
+\item
+  centro, investigador y coordinadora responsable;
+\item
+  estado operativo;
+\item
+  disponibilidad de cupo o slot;
+\item
+  versión vigente del protocolo;
+\item
+  fecha, fuente y responsable de la última verificación;
+\item
+  próxima fecha de revisión.
+\end{itemize}
+
+\hypertarget{7-flujo-propuesto-de-slots}{%
+\subsection{7. Flujo propuesto de
+slots}\label{7-flujo-propuesto-de-slots}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Identificar anticipadamente una oportunidad potencial.
+\item
+  Solicitar un slot o registrar ingreso a lista de espera.
+\item
+  Registrar una prioridad operativa justificada.
+\item
+  Registrar confirmación del patrocinador.
+\item
+  Mostrar la ventana disponible y sus fechas.
+\item
+  Revisar criterios y datos dinámicos de manera humana.
+\item
+  Registrar utilización, liberación o vencimiento.
+\end{enumerate}
+
+La lista de espera no constituye un ranking clínico. Cada movimiento
+debe registrar responsable, fecha, fuente y motivo.
+
+\hypertarget{8-flujo-propuesto-de-pretesting}{%
+\subsection{8. Flujo propuesto de
+pretesting}\label{8-flujo-propuesto-de-pretesting}}
+
+La plataforma permitirá seguir:
+
+\begin{itemize}
+\tightlist
+\item
+  prueba requerida;
+\item
+  estudio o cohorte relacionada;
+\item
+  fecha de indicación y toma;
+\item
+  estado del resultado;
+\item
+  fuente;
+\item
+  vigencia o vencimiento;
+\item
+  responsable y próxima acción;
+\item
+  condición que gatillaría una revisión.
+\end{itemize}
+
+Los recordatorios serán administrativos y no modificarán automáticamente
+una preselección ni reservarán cupos.
+
+\hypertarget{9-usuarios-propuestos}{%
+\subsection{9. Usuarios propuestos}\label{9-usuarios-propuestos}}
+
+\begin{itemize}
+\tightlist
+\item
+  investigador principal;
+\item
+  médico investigador u oncólogo derivador;
+\item
+  enfermera coordinadora;
+\item
+  jefatura de enfermería;
+\item
+  coordinación administrativa;
+\item
+  equipos de factibilidad y preactivación;
+\item
+  administración técnica;
+\item
+  auditor autorizado.
+\end{itemize}
+
+Los permisos se definirán según centro, estudio, acción y relación con
+el recurso. Un cargo o participación en una reunión no concederá
+automáticamente acceso clínico.
+
+\hypertarget{10-datos-y-resguardos}{%
+\subsection{10. Datos y resguardos}\label{10-datos-y-resguardos}}
+
+Antes de utilizar información real, CICUC deberá aprobar:
+
+\begin{itemize}
+\tightlist
+\item
+  datos mínimos permitidos;
+\item
+  fundamento o consentimiento aplicable;
+\item
+  permisos de visualización y modificación;
+\item
+  separación de información identificatoria, clínica y operativa;
+\item
+  retención y eliminación;
+\item
+  custodia de protocolos y documentos;
+\item
+  reglas de descarga y exportación;
+\item
+  auditoría y respuesta ante incidentes.
+\end{itemize}
+
+Hasta esa aprobación, el desarrollo y las demostraciones utilizarán
+únicamente datos ficticios.
+
+\hypertarget{11-reportes-propuestos}{%
+\subsection{11. Reportes propuestos}\label{11-reportes-propuestos}}
+
+\begin{itemize}
+\tightlist
+\item
+  estudios por estado, patología y centro;
+\item
+  reclutamiento comprometido versus real;
+\item
+  slots solicitados, asignados, utilizados y vencidos;
+\item
+  lista de espera;
+\item
+  pretests y tareas pendientes;
+\item
+  antigüedad de la información;
+\item
+  actividad y trazabilidad operacional.
+\end{itemize}
+
+Cada indicador deberá contar con definición, fuente, periodo, fecha de
+corte, unidad de análisis y permisos aprobados.
+
+\hypertarget{12-decisiones-solicitadas-a-cicuc}{%
+\subsection{12. Decisiones solicitadas a
+CICUC}\label{12-decisiones-solicitadas-a-cicuc}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Tema & Propuesta & Validación \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Estados del estudio & Preactivación, reclutamiento, seguimiento, hold,
+cerrado y archivado & ☐ Aprobar ☐ Ajustar \\
+Responsable del inventario & Coordinadora por estudio con supervisión de
+jefatura & ☐ Aprobar ☐ Ajustar \\
+Vigencia & Cada registro muestra fecha, fuente, responsable y próxima
+revisión & ☐ Aprobar ☐ Ajustar \\
+Slots & Solicitud, espera, asignación, uso, liberación y vencimiento & ☐
+Aprobar ☐ Ajustar \\
+Lista de espera & Prioridad operacional trazable, no ranking clínico & ☐
+Aprobar ☐ Ajustar \\
+Pretesting & Tareas y recordatorios administrativos con fechas y
+responsables & ☐ Aprobar ☐ Ajustar \\
+Pacientes & Solo datos ficticios hasta aprobar privacidad y permisos & ☐
+Aprobar ☐ Ajustar \\
+Elegibilidad & Siempre corresponde al investigador y equipo clínico & ☐
+Aprobar ☐ Ajustar \\
+IA y voz & Fuera del MVP administrativo & ☐ Aprobar ☐ Ajustar \\
+Reportes & Implementar después de aprobar definiciones de KPI & ☐
+Aprobar ☐ Ajustar \\
+\end{longtable}
+
+\hypertarget{13-preguntas-para-la-reuniuxf3n}{%
+\subsection{13. Preguntas para la
+reunión}\label{13-preguntas-para-la-reuniuxf3n}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  ¿Quién mantiene cada estudio y quién lo reemplaza?
+\item
+  ¿Cada cuánto debe confirmarse la información?
+\item
+  ¿Cuándo un registro debe mostrarse como desactualizado?
+\item
+  ¿Qué estados y transiciones se usan actualmente?
+\item
+  ¿Qué diferencia operacional existe entre cupo y slot?
+\item
+  ¿Qué datos mínimos necesita una lista de espera?
+\item
+  ¿Qué pretests se anticipan y cuánto dura su vigencia?
+\item
+  ¿Dónde se custodiarán protocolos confidenciales?
+\item
+  ¿Qué puede consultar un oncólogo externo?
+\item
+  ¿Cómo se definen los compromisos y KPI de reclutamiento?
+\end{enumerate}
+
+\hypertarget{14-registro-de-validaciuxf3n}{%
+\subsection{14. Registro de
+validación}\label{14-registro-de-validaciuxf3n}}
+
+\textbf{Fecha de reunión:}
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\textbf{Participantes:}
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\textbf{Acuerdos principales:}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Observaciones o cambios requeridos:}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Por CICUC & Por el equipo del proyecto \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Nombre: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & Nombre:
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+Cargo: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & Cargo:
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+Firma: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & Firma:
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+Fecha: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & Fecha:
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+\end{longtable}
+
+\end{document}
