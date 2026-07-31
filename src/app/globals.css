@@ -449,6 +449,16 @@ a {
   min-height: 172px;
   padding: 28px 4px;
   border-bottom: 1px solid rgba(255,255,255,.19);
+  transition: transform 260ms ease, background-color 260ms ease, padding 260ms ease;
+  will-change: transform;
+}
+
+.projectRow:hover {
+  z-index: 1;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: rgba(255,255,255,.075);
+  transform: translateY(-5px);
 }
 
 .projectNumber {
@@ -629,6 +639,8 @@ a {
   margin-bottom: 18px;
   color: var(--ink);
   background: var(--mint);
+  transition: transform 260ms ease, background-color 260ms ease, box-shadow 260ms ease;
+  will-change: transform;
 }
 
 .portrait::before,
@@ -647,8 +659,17 @@ a {
 }
 
 .portrait.rafael {
-  margin-top: 70px;
   background: var(--acid);
+}
+
+.teamGrid article:hover .portrait {
+  transform: translateY(-8px) rotate(-1deg);
+  background: var(--acid);
+  box-shadow: 12px 14px 0 rgba(16, 22, 18, 0.2);
+}
+
+.teamGrid article:hover .portrait.rafael {
+  background: var(--mint);
 }
 
 .portrait span {
