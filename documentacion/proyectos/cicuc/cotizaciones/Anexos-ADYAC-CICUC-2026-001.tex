@@ -1,0 +1,408 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Inter}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=18mm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{spanish}
+\ifPDFTeX
+\else
+\babelfont{rm}[]{Inter}
+\fi
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdflang={es-CL},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Anexos contractuales — Plataforma CICUC}
+\author{Investigación, Tecnología y Gestión ADYAC SpA}
+\date{31 de julio de 2026}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+\hypertarget{anexo-a--alcance-hitos-aceptaciuxf3n-y-soporte}{%
+\section{Anexo A --- Alcance, hitos, aceptación y
+soporte}\label{anexo-a--alcance-hitos-aceptaciuxf3n-y-soporte}}
+
+\textbf{Cotización:} ADYAC-COT-CICUC-2026-001\\
+\textbf{Versión:} 1.0 --- 31 de julio de 2026\\
+\textbf{Estado:} Borrador sujeto a revisión y firma
+
+Este anexo forma parte integral e inseparable de la cotización.
+
+\hypertarget{1-objeto-y-luxedmites}{%
+\subsection{1. Objeto y límites}\label{1-objeto-y-luxedmites}}
+
+Adyac diseñará, desarrollará, validará y pondrá en marcha una plataforma
+web para la gestión administrativa de estudios clínicos oncológicos de
+CICUC. La plataforma apoya organización y preselección manual; no
+determina elegibilidad, no recomienda tratamientos y no reemplaza el
+protocolo ni el juicio profesional.
+
+Quedan fuera del alcance inicial IA, extracción automática, voz, ficha
+clínica, mensajería externa y elegibilidad automática.
+
+\hypertarget{2-luxednea-base}{%
+\subsection{2. Línea base}\label{2-luxednea-base}}
+
+Durante el primer mes las partes aprobarán por escrito una línea base
+con historias incluidas y excluidas, actores, permisos, flujos, datos,
+requisitos no funcionales, criterios de aceptación, pruebas,
+dependencias y responsables. No se tratarán datos reales ni se
+desarrollarán funciones dependientes de decisiones clínicas o legales
+bloqueantes antes de su aprobación.
+
+\hypertarget{3-hitos-y-facturaciuxf3n}{%
+\subsection{3. Hitos y facturación}\label{3-hitos-y-facturaciuxf3n}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Hito & Entregables mínimos & Condición de facturación \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Mes 1 --- Descubrimiento & Línea base, arquitectura, modelo conceptual,
+permisos provisionales, prototipo y ambiente demo & Aprobación escrita
+de línea base y entrega \\
+Mes 2 --- Núcleo & Autorización, inventario, ciclo de estudios,
+versiones y criterios manuales & Aceptación escrita y corrección de
+defectos bloqueantes \\
+Mes 3 --- Operación & Flujos operativos acordados, auditoría/reportes
+aprobados, documentación, capacitación y despliegue & Aceptación final y
+entrega de código, accesos y documentación \\
+\end{longtable}
+
+Cada hito tiene un valor de \textbf{CLP 3.000.000 netos}, más IVA.
+Total: \textbf{CLP 10.710.000 IVA incluido}. Cada cuota se factura
+únicamente después de la aceptación escrita del hito y se paga dentro de
+15 días corridos desde la recepción conforme del documento tributario.
+Una extensión requiere acuerdo escrito sobre alcance, plazo y precio; no
+se presume gratuita.
+
+\hypertarget{4-aceptaciuxf3n}{%
+\subsection{4. Aceptación}\label{4-aceptaciuxf3n}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Adyac notificará la entrega y acompañará evidencia.
+\item
+  CICUC tendrá 5 días hábiles para revisar contra criterios acordados.
+\item
+  La aceptación deberá constar por escrito; el silencio no constituye
+  aceptación.
+\item
+  El rechazo identificará criterios incumplidos y evidencia
+  reproducible.
+\item
+  Adyac corregirá sin costo defectos atribuibles al alcance y volverá a
+  presentar.
+\item
+  Requisitos nuevos seguirán control de cambios.
+\end{enumerate}
+
+\hypertarget{5-dependencias-de-cicuc}{%
+\subsection{5. Dependencias de CICUC}\label{5-dependencias-de-cicuc}}
+
+CICUC designará una contraparte, entregará decisiones oportunamente,
+proporcionará solo datos sintéticos o autorizados y validará roles,
+privacidad, custodia, infraestructura y KPI. Los retrasos atribuibles a
+estas dependencias ajustarán el calendario de común acuerdo y por
+escrito.
+
+\hypertarget{6-soporte-y-garantuxeda}{%
+\subsection{6. Soporte y garantía}\label{6-soporte-y-garantuxeda}}
+
+Se incluyen 12 meses desde la aceptación final: 30 días de
+estabilización, garantía correctiva de 90 días, atención hábil de lunes
+a viernes 09:00--18:00 Chile y hasta 6 horas mensuales no acumulables.
+Objetivos de primera respuesta: crítica 4 horas hábiles; alta 8 horas;
+media 1 día; baja 2 días. Nuevas funciones, rediseños, integraciones,
+licencias, nube y operación 24/7 se cotizan aparte.
+
+\hypertarget{7-tuxe9rmino-y-responsabilidad}{%
+\subsection{7. Término y
+responsabilidad}\label{7-tuxe9rmino-y-responsabilidad}}
+
+Cualquiera de las partes podrá terminar por incumplimiento material no
+subsanado dentro de 10 días hábiles desde notificación. CICUC pagará
+entregables aceptados; Adyac entregará artefactos pagados y cooperará
+razonablemente con la transición.
+
+Cada parte responderá por daños directos acreditados que le sean
+imputables. Se propone como límite general el monto neto pagado o
+pagadero, salvo dolo, culpa grave u obligaciones irrenunciables.
+Confidencialidad, datos personales e infracción de propiedad intelectual
+deben acordarse en el contrato definitivo.
+
+\hypertarget{8-facultad}{%
+\subsection{8. Facultad}\label{8-facultad}}
+
+La aceptación solo será válida por personas con facultades suficientes.
+Toda orden de compra deberá identificar la cotización y los Anexos A, B
+y C, con versión y fecha.
+
+\textbf{Referencia:} Código Civil de Chile, especialmente artículos 1545
+y 1546: \url{https://www.bcn.cl/leychile/navegar?idNorma=172986}.
+
+\hypertarget{anexo-b--acuerdo-propuesto-de-tratamiento-de-datos}{%
+\section{Anexo B --- Acuerdo propuesto de tratamiento de
+datos}\label{anexo-b--acuerdo-propuesto-de-tratamiento-de-datos}}
+
+\textbf{Cotización:} ADYAC-COT-CICUC-2026-001 · \textbf{Versión 1.0 ---
+31 de julio de 2026}\\
+\textbf{Estado:} Borrador para revisión jurídica, de privacidad,
+seguridad y ética UC
+
+\hypertarget{1-roles-y-finalidad}{%
+\subsection{1. Roles y finalidad}\label{1-roles-y-finalidad}}
+
+La Pontificia Universidad Católica de Chile/CICUC actuará como
+responsable y Adyac únicamente como encargado, conforme a instrucciones
+documentadas. La finalidad será prestar desarrollo, soporte y operación
+técnica de la plataforma. Se prohíben publicidad, perfiles comerciales,
+venta, cesión, usos propios y entrenamiento de modelos con datos de
+CICUC.
+
+\hypertarget{2-datos-y-titulares}{%
+\subsection{2. Datos y titulares}\label{2-datos-y-titulares}}
+
+Las categorías definitivas deberán aprobarse antes de producción.
+Podrían incluir datos identificatorios mínimos, datos clínicos
+sensibles, datos operacionales, usuarios y auditoría; los titulares
+podrían ser candidatos, participantes y profesionales. Durante
+desarrollo y pruebas se usarán exclusivamente datos sintéticos o
+correctamente anonimizados.
+
+\hypertarget{3-instrucciones-y-confidencialidad}{%
+\subsection{3. Instrucciones y
+confidencialidad}\label{3-instrucciones-y-confidencialidad}}
+
+Adyac tratará datos solo según instrucciones; limitará acceso a personal
+autorizado y sujeto a confidencialidad; registrará accesos relevantes;
+notificará instrucciones potencialmente ilícitas y no revelará
+información salvo autorización o mandato legal.
+
+\hypertarget{4-seguridad-muxednima}{%
+\subsection{4. Seguridad mínima}\label{4-seguridad-muxednima}}
+
+\begin{itemize}
+\tightlist
+\item
+  cifrado en tránsito y, cuando corresponda, en reposo;
+\item
+  mínimo privilegio, autenticación individual y segregación de
+  ambientes;
+\item
+  auditoría, gestión de vulnerabilidades y secretos fuera del código;
+\item
+  respaldos, restauración, eliminación segura y control de
+  exportaciones;
+\item
+  procedimiento probado de respuesta ante incidentes.
+\end{itemize}
+
+\hypertarget{5-infraestructura-y-subencargados}{%
+\subsection{5. Infraestructura y
+subencargados}\label{5-infraestructura-y-subencargados}}
+
+Este borrador no autoriza una ubicación productiva ni proveedor
+definitivo. Adyac informará previamente proveedor, servicios, países de
+tratamiento, subencargados, medidas de seguridad y mecanismo para
+transferencias internacionales. Nuevos subencargados seguirán el
+mecanismo de aprobación UC.
+
+\hypertarget{6-incidentes}{%
+\subsection{6. Incidentes}\label{6-incidentes}}
+
+Adyac notificará a CICUC sin dilación indebida y, como objetivo
+contractual, dentro de 24 horas desde que tome conocimiento. Informará
+naturaleza, datos y titulares potencialmente afectados, riesgos y
+medidas; preservará evidencia y cooperará con la investigación. La
+notificación no implica reconocimiento automático de responsabilidad.
+
+\hypertarget{7-derechos-auditoruxeda-y-evaluaciones}{%
+\subsection{7. Derechos, auditoría y
+evaluaciones}\label{7-derechos-auditoruxeda-y-evaluaciones}}
+
+Adyac asistirá razonablemente en derechos de titulares, evaluaciones de
+impacto, consultas regulatorias y auditorías acordadas. No responderá
+directamente a titulares salvo instrucción o exigencia legal.
+
+\hypertarget{8-tuxe9rmino}{%
+\subsection{8. Término}\label{8-tuxe9rmino}}
+
+Al finalizar, Adyac devolverá los datos en formato acordado y eliminará
+copias bajo su control, salvo obligación legal, emitiendo confirmación
+escrita. Los respaldos se eliminarán conforme al ciclo documentado y
+seguirán protegidos.
+
+\hypertarget{9-marco-normativo}{%
+\subsection{9. Marco normativo}\label{9-marco-normativo}}
+
+Las partes considerarán la Ley 19.628, la Ley 20.584 y las exigencias de
+la Ley 21.719 desde el 1 de diciembre de 2026. Este anexo debe adecuarse
+a políticas UC y ser aprobado antes de utilizar datos personales reales.
+
+\textbf{Referencias oficiales:}
+\href{https://www.bcn.cl/leychile/Navegar?idNorma=141599}{Ley 19.628},
+\href{https://www.bcn.cl/leychile/Navegar?idNorma=1039348}{Ley 20.584} y
+\href{https://www.bcn.cl/leychile/navegar?idNorma=1209272}{Ley 21.719}.
+
+\hypertarget{anexo-c--propiedad-intelectual-seguridad-y-continuidad}{%
+\section{Anexo C --- Propiedad intelectual, seguridad y
+continuidad}\label{anexo-c--propiedad-intelectual-seguridad-y-continuidad}}
+
+\textbf{Cotización:} ADYAC-COT-CICUC-2026-001 · \textbf{Versión 1.0 ---
+31 de julio de 2026}\\
+\textbf{Estado:} Borrador sujeto a revisión y firma
+
+\hypertarget{1-entregables-especuxedficos}{%
+\subsection{1. Entregables
+específicos}\label{1-entregables-especuxedficos}}
+
+Pagados íntegramente los hitos aceptados, CICUC será titular de los
+derechos patrimoniales que correspondan sobre desarrollos creados
+específicamente por encargo: código fuente, migraciones, configuración
+específica, documentación, pruebas, diseños y contenidos específicos
+pagados. Recibirá repositorios, historial disponible, instrucciones de
+build, dependencias y accesos bajo su control. Podrá usar, modificar y
+encargar mantenimiento a terceros para fines institucionales.
+
+\hypertarget{2-material-preexistente-de-adyac}{%
+\subsection{2. Material preexistente de
+Adyac}\label{2-material-preexistente-de-adyac}}
+
+Adyac conserva herramientas, bibliotecas, plantillas, métodos y
+componentes genéricos preexistentes o desarrollados independientemente.
+Todo componente incorporado deberá identificarse previamente en un
+registro. Sobre componentes indispensables, Adyac concede licencia
+perpetua, irrevocable, mundial y libre de regalías, transferible junto
+al sistema o a mantenedores de CICUC.
+
+No se incluyen componentes de machine learning en el alcance inicial.
+Cualquier incorporación futura exige un anexo específico sobre modelos,
+datos, evaluación y derechos.
+
+\hypertarget{3-terceros-y-datos}{%
+\subsection{3. Terceros y datos}\label{3-terceros-y-datos}}
+
+Adyac mantendrá inventario de dependencias y licencias y no incorporará
+licencias incompatibles sin aprobación. CICUC conserva todos los
+derechos sobre sus datos, protocolos, marcas y documentos; Adyac no
+podrá reutilizarlos ni entrenar modelos.
+
+\hypertarget{4-seguridad-de-entrega}{%
+\subsection{4. Seguridad de entrega}\label{4-seguridad-de-entrega}}
+
+Antes de puesta en marcha se entregará evidencia de pruebas,
+autorización negativa, gestión de secretos, dependencias revisadas,
+respaldo/restauración, logs sin información sensible, riesgos conocidos
+y procedimiento de incidentes.
+
+\hypertarget{5-continuidad}{%
+\subsection{5. Continuidad}\label{5-continuidad}}
+
+Ante término o cambio de proveedor, Adyac entregará artefactos pagados,
+documentación y exportaciones acordadas, y cooperará razonablemente. No
+podrá retener datos de CICUC como garantía de pago.
+
+\hypertarget{6-registro-previo-a-la-firma}{%
+\subsection{6. Registro previo a la
+firma}\label{6-registro-previo-a-la-firma}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Registro & Estado \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Componentes preexistentes de Adyac & Pendiente \\
+Dependencias open source y licencias & Pendiente \\
+Proveedor cloud, servicios y ubicación & Pendiente \\
+Subencargados autorizados & Pendiente \\
+Repositorios y administradores institucionales & Pendiente \\
+Procedimiento de salida y formato de exportación & Pendiente \\
+\end{longtable}
+
+\textbf{Referencia oficial:} Ley 17.336 sobre Propiedad Intelectual,
+artículo 8 y disposiciones relacionadas:
+\url{https://www.bcn.cl/leychile/navegar?idNorma=28933}.
+
+\end{document}

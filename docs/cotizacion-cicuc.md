@@ -102,10 +102,10 @@ un desarrollo iterativo con entregas demostrables.
 | IVA |  |  | $1.710.000 CLP |
 | **Total con IVA** |  |  | **$10.710.000 CLP** |
 
-- Facturación y pago: mensual.
+- Facturación: contra aceptación escrita de cada hito mensual.
 - Valor mensual con IVA: **$3.570.000 CLP**.
 - Condición de pago propuesta: dentro de 15 días corridos desde la emisión del
-  documento tributario correspondiente.
+  documento tributario correspondiente y recibido conforme.
 - Inicio estimado: sujeto a aceptación, disponibilidad de antecedentes y
   formalización administrativa.
 
@@ -127,6 +127,10 @@ Cada incremento se revisará contra criterios de aceptación escritos. El cierre
 requiere una prueba de aceptación de la línea base aprobada. Las observaciones
 deberán identificar el requisito o criterio incumplido.
 
+CICUC dispondrá de 5 días hábiles para revisar cada entrega. La aceptación debe
+constar por escrito y el silencio no constituye aceptación. El procedimiento
+completo se encuentra en el Anexo A.
+
 ## 8. Propiedad intelectual
 
 CICUC será titular de los entregables desarrollados específicamente para el
@@ -134,17 +138,11 @@ proyecto y pagados íntegramente, incluyendo código específico, configuración
 documentación y modelo de datos propio del producto, sin perjuicio de derechos de
 terceros.
 
-Adyac conservará la titularidad de herramientas preexistentes y componentes
-genéricos reutilizables —incluidos métodos, bibliotecas, infraestructura,
-plantillas y algoritmos generales de machine learning— que no incorporen datos
-confidenciales ni reglas exclusivas de CICUC. Cuando estos componentes estén
-embebidos en el producto, Adyac otorgará a CICUC una licencia perpetua,
-irrevocable, mundial, libre de regalías y suficiente para usar, mantener y
-modificar el sistema entregado.
-
-Los modelos o artefactos entrenados exclusivamente con datos de CICUC, y los
-derivados que permitan reconstruir información sensible, serán de CICUC y no
-podrán reutilizarse por Adyac sin autorización expresa y escrita.
+Adyac conservará la titularidad de herramientas y componentes preexistentes o
+desarrollados independientemente, que deberán identificarse antes de su uso.
+Cuando sean indispensables para operar o mantener el producto, otorgará a CICUC
+la licencia definida en el Anexo C. No se incluyen componentes de machine
+learning en el alcance inicial.
 
 Esta cláusula debe incorporarse al contrato definitivo y ser revisada por las
 partes antes de su firma.
@@ -170,8 +168,10 @@ servicios de terceros se cotizarán cuando se conozcan sus requisitos.
 
 ## 11. Aceptación
 
-La aceptación de esta cotización deberá constar por escrito y complementarse con
-el contrato u orden de compra correspondiente.
+La aceptación deberá constar por escrito y comprender conjuntamente esta
+cotización y los Anexos A, B y C, versión 1.0 de 31 de julio de 2026. La persona
+que acepte por cada parte deberá contar con facultades suficientes. Una orden de
+compra debe identificar expresamente los cuatro documentos.
 
 | Por Adyac | Por CICUC |
 |---|---|
