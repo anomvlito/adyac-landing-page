@@ -43,11 +43,11 @@ consideran inicialmente:
 
 1. inventario centralizado de estudios;
 2. estados de preactivación, activo —reclutamiento o seguimiento— y cerrado;
-3. administración de usuarios, centros, roles y permisos;
+3. identificación de usuarios, centros, roles y permisos;
 4. registro y actualización de estudios, protocolos y responsables;
 5. criterios de inclusión y exclusión estructurados;
-6. gestión de candidatos y seguimiento de su estado;
-7. estudios con cupos o *slots*, lista priorizada y vencimientos;
+6. criterios de aceptación, selección y manejo de candidatos, seguimiento;
+7. gestión de cupos para estudios, listas de espera, exámenes previos y alertas;
 8. seguimiento de pretesting y recordatorios;
 9. alertas operativas;
 10. panel de indicadores de reclutamiento, compromisos y actividad;
@@ -77,7 +77,7 @@ sola la elegibilidad clínica ni sustituirá el juicio profesional.
 
 - autenticación y autorización;
 - inventario y ciclo de vida de estudios;
-- criterios, candidatos, slots y pretesting;
+- criterios de aceptación, selección y manejo de candidatos;
 - pruebas continuas y demostraciones de avance.
 
 ### Mes 3 — Cierre funcional y puesta en marcha
@@ -124,39 +124,7 @@ Cada incremento se revisará contra criterios de aceptación escritos. El cierre
 requiere una prueba de aceptación de la línea base aprobada. Las observaciones
 deberán identificar el requisito o criterio incumplido.
 
-## 8. Soporte del primer año
-
-Se incluye soporte durante doce meses desde la aceptación de puesta en marcha:
-
-- 30 días iniciales de estabilización;
-- atención de lunes a viernes, de 09:00 a 18:00, hora de Chile, exceptuando
-  feriados;
-- corrección de defectos del alcance entregado;
-- actualizaciones críticas de seguridad;
-- revisión básica de salud, registros y respaldos;
-- hasta 6 horas mensuales no acumulables para soporte correctivo y consultas;
-- reporte mensual de incidencias durante los primeros tres meses y luego a
-  solicitud.
-
-### Niveles de atención
-
-| Severidad | Ejemplo | Primera respuesta | Objetivo de contención |
-|---|---|---:|---:|
-| Crítica | sistema indisponible o riesgo grave de datos | 4 horas hábiles | 1 día hábil |
-| Alta | flujo principal bloqueado sin alternativa | 8 horas hábiles | 2 días hábiles |
-| Media | degradación con alternativa disponible | 1 día hábil | siguiente mantención |
-| Baja | consulta o defecto menor | 2 días hábiles | planificación acordada |
-
-Los plazos son objetivos de atención y contención, no garantías absolutas de
-resolución. Se incluye una garantía correctiva de 90 días para defectos
-reproducibles atribuibles al desarrollo entregado.
-
-No se incluyen nuevas funcionalidades, rediseños, integraciones nuevas,
-operación 24/7, costos de nube, dominios, licencias de terceros ni soporte por
-problemas ajenos a la solución. Estos elementos se cotizarán mediante control de
-cambios.
-
-## 9. Propiedad intelectual
+## 8. Propiedad intelectual
 
 CICUC será titular de los entregables desarrollados específicamente para el
 proyecto y pagados íntegramente, incluyendo código específico, configuración,
@@ -178,7 +146,7 @@ podrán reutilizarse por Adyac sin autorización expresa y escrita.
 Esta cláusula debe incorporarse al contrato definitivo y ser revisada por las
 partes antes de su firma.
 
-## 10. Control de cambios
+## 9. Control de cambios
 
 La expresión “historias de usuario faltantes” se entenderá limitada a las
 historias incluidas en la línea base aprobada al finalizar el levantamiento.
@@ -186,7 +154,7 @@ Cualquier requisito nuevo o cambio material deberá registrar impacto en plazo,
 costo, seguridad y pruebas, y requerirá aprobación escrita antes de su
 implementación.
 
-## 11. Supuestos, responsabilidades y exclusiones
+## 10. Supuestos, responsabilidades y exclusiones
 
 CICUC designará responsables disponibles para validar procesos, contenidos y
 entregas, y proporcionará oportunamente documentación y datos ficticios o
@@ -197,7 +165,7 @@ responsabilidades, base jurídica, acceso, retención, respaldo y respuesta ante
 incidentes. La infraestructura productiva, integraciones institucionales y
 servicios de terceros se cotizarán cuando se conozcan sus requisitos.
 
-## 12. Aceptación
+## 11. Aceptación
 
 La aceptación de esta cotización deberá constar por escrito y complementarse con
 el contrato u orden de compra correspondiente.
