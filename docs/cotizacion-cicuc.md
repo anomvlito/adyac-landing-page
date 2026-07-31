@@ -102,6 +102,7 @@ un desarrollo iterativo con entregas demostrables.
 | Concepto | Cantidad | Valor mensual neto | Total neto |
 |---|---:|---:|---:|
 | Desarrollo e implementación por hitos | 3 hitos | $3.000.000 CLP netos | $9.000.000 CLP netos |
+| Bolsa de infraestructura AWS para desarrollo (cargo CICUC) | 1 bolsa | USD 500 | USD 500 |
 | IVA |  |  | $1.710.000 CLP |
 | **Total con IVA** |  |  | **$10.710.000 CLP** |
 
