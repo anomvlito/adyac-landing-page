@@ -24,7 +24,7 @@
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
-    body { padding: 11mm 15mm 8mm; }
+    body { padding: 11mm 15mm 4mm; }
     .mono, .label {
       font-family: "DejaVu Sans Mono", monospace;
       text-transform: uppercase;
@@ -238,11 +238,20 @@
       font-size: 6.4px;
       line-height: 1.45;
     }
+    .note {
+      margin: 0 0 2mm;
+      padding: 2mm 3mm;
+      color: #434b45;
+      background: #e8eadf;
+      border-left: 1.2mm solid var(--acid);
+      font-size: 6.8px;
+      line-height: 1.35;
+    }
     .acceptance {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16mm;
-      padding-top: 5mm;
+      padding-top: 2mm;
     }
     .signature {
       padding-top: 2mm;
@@ -253,8 +262,8 @@
     footer {
       display: flex;
       justify-content: space-between;
-      margin-top: 2mm;
-      font-size: 6.2px;
+      margin-top: 0;
+      font-size: 5.8px;
       color: var(--muted);
     }
     a {
@@ -334,12 +343,18 @@
       tributario respectivo.
       Inicio sujeto a aceptación y formalización administrativa.
     </div>
-    <div class="sum">
-      <div><span>Subtotal neto</span><strong>$9.000.000</strong></div>
-      <div><span>IVA 19%</span><strong>$1.710.000</strong></div>
-      <div class="grand"><span>Total</span><strong>$10.710.000</strong></div>
-    </div>
+      <div class="sum">
+        <div><span>Subtotal neto</span><strong>$9.000.000</strong></div>
+        <div><span>IVA 19%</span><strong>$1.710.000</strong></div>
+        <div class="grand"><span>Total</span><strong>$10.710.000</strong></div>
+      </div>
   </section>
+
+  <p class="note"><strong>Presupuesto de infraestructura:</strong> CICUC dispondrá
+    adicionalmente de una bolsa de <strong>USD 500 para servicios AWS durante el
+    desarrollo</strong>. Es un costo de infraestructura de cargo de CICUC, no forma
+    parte del precio de ADYAC ni del total en pesos. Cualquier ampliación requiere
+    autorización escrita previa de CICUC.</p>
 
   <section class="scope">
     <div>
@@ -390,9 +405,10 @@
     no constituye aceptación. No se tratarán datos personales reales hasta aprobar
     el Anexo B e implementar y verificar sus medidas técnicas, organizativas y de
     seguridad; durante desarrollo y pruebas se usarán datos sintéticos o anonimizados.
-    No se incluyen infraestructura cloud, licencias de terceros, integraciones no
-    identificadas en el Anexo A, soporte adicional al incluido en el Anexo A ni
-    operación 24/7. La persona que acepte deberá acreditar facultades.</p>
+    No se incluyen costos de infraestructura cloud que excedan la bolsa AWS de USD
+    500, licencias de terceros, integraciones no identificadas en el Anexo A,
+    soporte adicional al incluido en el Anexo A ni operación 24/7. La persona que
+    acepte deberá acreditar facultades.</p>
 
   <section class="acceptance">
     <div class="signature">

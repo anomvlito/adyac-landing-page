@@ -17,8 +17,11 @@ del investigador responsable.
 
 Quedan fuera del alcance inicial IA, extracción automática, voz, ficha clínica,
 mensajería externa y elegibilidad automática. Tampoco se incluyen infraestructura
-cloud, licencias de terceros, integraciones no identificadas en este Anexo,
-soporte adicional al incluido en la sección 6 ni operación 24/7.
+cloud, salvo la bolsa de **USD 500 para servicios AWS durante el desarrollo**,
+licencias de terceros, integraciones no identificadas en este Anexo, soporte
+adicional al incluido en la sección 6 ni operación 24/7. La bolsa AWS es de cargo
+de CICUC, no integra el precio de ADYAC y cualquier ampliación requiere
+autorización escrita previa de CICUC.
 
 ## 2. Línea base
 

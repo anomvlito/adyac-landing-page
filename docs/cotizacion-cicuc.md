@@ -105,6 +105,13 @@ un desarrollo iterativo con entregas demostrables.
 | IVA |  |  | $1.710.000 CLP |
 | **Total con IVA** |  |  | **$10.710.000 CLP** |
 
+Adicionalmente, CICUC dispondrá de una bolsa de **USD 500 para servicios AWS
+durante el desarrollo**. Este monto corresponde a costos de infraestructura del
+proyecto, es de cargo de CICUC y no forma parte del precio de ADYAC ni del total
+en pesos indicado arriba. La contratación, cuenta y forma de pago de AWS deberán
+ser definidas por CICUC. Cualquier ampliación de esta bolsa requerirá autorización
+escrita de CICUC antes de incurrir en el gasto.
+
 - Tres cuotas de **$3.570.000 CLP IVA incluido**, facturadas contra la aceptación
   escrita de los hitos correspondientes a los meses 1, 2 y 3.
 - El pago deberá efectuarse dentro de 15 días corridos desde la emisión del
@@ -173,9 +180,9 @@ utilizarán preferentemente datos sintéticos o correctamente anonimizados. La
 infraestructura productiva, integraciones institucionales y servicios de terceros
 se cotizarán cuando se conozcan sus requisitos.
 
-No se incluyen infraestructura cloud, licencias de terceros, integraciones no
-identificadas en el Anexo A, soporte adicional al incluido en el Anexo A ni
-operación 24/7.
+No se incluyen costos de infraestructura cloud que excedan la bolsa AWS de USD
+500 indicada en la sección 6, licencias de terceros, integraciones no identificadas
+en el Anexo A, soporte adicional al incluido en el Anexo A ni operación 24/7.
 
 ## 11. Aceptación
 
