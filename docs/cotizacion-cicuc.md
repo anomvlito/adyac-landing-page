@@ -10,7 +10,7 @@
 - **Nombre comercial:** Adyac
 - **Razón social:** Investigación, Tecnología y Gestión ADYAC SpA
 - **RUT:** 78.329.959-3
-- **Representante:** Fabián Ignacio Ortega Llantén
+- **Emisor:** ADYAC SpA
 - **Correo:** hola@adyac.cl
 - **Domicilio:** `[COMPLETAR DOMICILIO TRIBUTARIO]`
 
@@ -203,7 +203,7 @@ el contrato u orden de compra correspondiente.
 
 | Por Adyac | Por CICUC |
 |---|---|
-| Fabián Ignacio Ortega Llantén | `[NOMBRE]` |
+| Investigación, Tecnología y Gestión ADYAC SpA | `[NOMBRE]` |
 | `[CARGO]` | `[CARGO]` |
 | Firma: ____________________ | Firma: ____________________ |
 | Fecha: ____________________ | Fecha: ____________________ |
