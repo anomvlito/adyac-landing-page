@@ -16,8 +16,11 @@ entrenamiento de modelos con datos de CICUC.
 Las categorías definitivas deberán aprobarse antes de producción. Podrían incluir
 datos identificatorios mínimos, datos clínicos sensibles, datos operacionales,
 usuarios y auditoría; los titulares podrían ser candidatos, participantes y
-profesionales. Durante desarrollo y pruebas se usarán exclusivamente datos
-sintéticos o correctamente anonimizados.
+profesionales. Durante desarrollo y pruebas se usarán preferentemente datos
+sintéticos o correctamente anonimizados. No se tratarán datos personales reales
+hasta que este Anexo haya sido aprobado y las medidas técnicas, organizativas y
+de seguridad definidas aquí se encuentren implementadas y verificadas por las
+partes.
 
 ## 3. Instrucciones y confidencialidad
 

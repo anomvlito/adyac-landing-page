@@ -10,19 +10,25 @@ Este anexo forma parte integral e inseparable de la cotización.
 
 Adyac diseñará, desarrollará, validará y pondrá en marcha una plataforma web
 para la gestión administrativa de estudios clínicos oncológicos de CICUC. La
-plataforma apoya organización y preselección manual; no determina elegibilidad,
-no recomienda tratamientos y no reemplaza el protocolo ni el juicio profesional.
+plataforma constituye una herramienta de apoyo operativo y preselección
+documental. No determina por sí sola la elegibilidad clínica, no recomienda
+tratamientos y no reemplaza el protocolo ni la evaluación del equipo médico o
+del investigador responsable.
 
 Quedan fuera del alcance inicial IA, extracción automática, voz, ficha clínica,
-mensajería externa y elegibilidad automática.
+mensajería externa y elegibilidad automática. Tampoco se incluyen infraestructura
+cloud, licencias de terceros, integraciones no identificadas en este Anexo,
+soporte adicional al incluido en la sección 6 ni operación 24/7.
 
 ## 2. Línea base
 
 Durante el primer mes las partes aprobarán por escrito una línea base con
 historias incluidas y excluidas, actores, permisos, flujos, datos, requisitos no
 funcionales, criterios de aceptación, pruebas, dependencias y responsables. No
-se tratarán datos reales ni se desarrollarán funciones dependientes de decisiones
-clínicas o legales bloqueantes antes de su aprobación.
+se tratarán datos personales reales hasta que el Anexo B haya sido aprobado y las
+medidas técnicas, organizativas y de seguridad allí establecidas se encuentren
+implementadas y verificadas. Durante desarrollo y pruebas se utilizarán
+preferentemente datos sintéticos o correctamente anonimizados.
 
 ## 3. Hitos y facturación
 
@@ -32,11 +38,11 @@ clínicas o legales bloqueantes antes de su aprobación.
 | Mes 2 — Núcleo | Autorización, inventario, ciclo de estudios, versiones y criterios manuales | Aceptación escrita y corrección de defectos bloqueantes |
 | Mes 3 — Operación | Flujos operativos acordados, auditoría/reportes aprobados, documentación, capacitación y despliegue | Aceptación final y entrega de código, accesos y documentación |
 
-Cada hito tiene un valor de **CLP 3.000.000 netos**, más IVA. Total: **CLP
-10.710.000 IVA incluido**. Cada cuota se factura únicamente después de la aceptación
-escrita del hito y se paga dentro de 15 días corridos desde la recepción conforme
-del documento tributario. Una extensión requiere acuerdo escrito sobre alcance,
-plazo y precio; no se presume gratuita.
+Tres cuotas de **CLP 3.570.000 IVA incluido**, facturadas contra la aceptación
+escrita de los hitos correspondientes a los meses 1, 2 y 3. El pago deberá
+efectuarse dentro de 15 días corridos desde la emisión del documento tributario
+respectivo. Total: **CLP 10.710.000 IVA incluido**. Una extensión requiere acuerdo
+escrito sobre alcance, plazo y precio; no se presume gratuita.
 
 ## 4. Aceptación
 
@@ -59,8 +65,9 @@ calendario de común acuerdo y por escrito.
 Se incluyen 12 meses desde la aceptación final: 30 días de estabilización,
 garantía correctiva de 90 días, atención hábil de lunes a viernes 09:00–18:00
 Chile y hasta 6 horas mensuales no acumulables. Objetivos de primera respuesta:
-crítica 4 horas hábiles; alta 8 horas; media 1 día; baja 2 días. Nuevas funciones,
-rediseños, integraciones, licencias, nube y operación 24/7 se cotizan aparte.
+crítica 4 horas hábiles; alta 8 horas; media 1 día; baja 2 días. El soporte
+adicional al incluido, nuevas funciones, rediseños, integraciones, licencias,
+nube y operación 24/7 se cotizan aparte.
 
 ## 7. Término y responsabilidad
 

@@ -76,20 +76,23 @@ hayan sido definidos, autorizados y acordados por escrito.
 - priorización y aprobación de la línea base;
 - definición del flujo de procesos y la arquitectura inicial.
 
-### Mes 2 — Desarrollo de MVP funcional básico y validación con usuarios
+### Mes 2 — Desarrollo del incremento intermedio del MVP y validación con usuarios
 
 - autenticación y autorización;
 - inventario y ciclo de vida de estudios;
 - criterios de aceptación, selección y manejo de candidatos;
 - pruebas continuas y validación con usuarios.
 
-### Mes 3 — Puesta en marcha y marcha blanca
+### Mes 3 — Entrega del producto operativo, puesta en marcha y marcha blanca
 
 - historias de usuario incluidas en la línea base aprobada;
 - indicadores, alertas y trazabilidad acordados;
 - marcha blanca y pruebas de aceptación;
 - correcciones, documentación y capacitación;
 - puesta en marcha y entrega.
+
+El MVP del mes 2 es un incremento intermedio; la entrega comprometida al cierre
+del mes 3 es el producto operativo definido por la línea base aprobada.
 
 La gestión del proyecto seguirá principios compatibles con PMBOK 7, adaptados a
 un desarrollo iterativo con entregas demostrables.
@@ -98,14 +101,14 @@ un desarrollo iterativo con entregas demostrables.
 
 | Concepto | Cantidad | Valor mensual neto | Total neto |
 |---|---:|---:|---:|
-| Servicio mensual de desarrollo e implementación | 3 meses | $3.000.000 CLP | $9.000.000 CLP |
+| Desarrollo e implementación por hitos | 3 hitos | $3.000.000 CLP netos | $9.000.000 CLP netos |
 | IVA |  |  | $1.710.000 CLP |
 | **Total con IVA** |  |  | **$10.710.000 CLP** |
 
-- Facturación: contra aceptación escrita de cada hito mensual.
-- Valor mensual con IVA: **$3.570.000 CLP**.
-- Condición de pago propuesta: dentro de 15 días corridos desde la emisión del
-  documento tributario correspondiente y recibido conforme.
+- Tres cuotas de **$3.570.000 CLP IVA incluido**, facturadas contra la aceptación
+  escrita de los hitos correspondientes a los meses 1, 2 y 3.
+- El pago deberá efectuarse dentro de 15 días corridos desde la emisión del
+  documento tributario respectivo.
 - Inicio estimado: sujeto a aceptación, disponibilidad de antecedentes y
   formalización administrativa.
 
@@ -133,16 +136,18 @@ completo se encuentra en el Anexo A.
 
 ## 8. Propiedad intelectual
 
-CICUC será titular de los entregables desarrollados específicamente para el
-proyecto y pagados íntegramente, incluyendo código específico, configuración,
-documentación y modelo de datos propio del producto, sin perjuicio de derechos de
-terceros.
+Adyac entregará a CICUC el código fuente, documentación y configuraciones
+desarrolladas específicamente y pagadas en virtud del proyecto, cediendo los
+derechos patrimoniales correspondientes en los términos del Anexo C. CICUC podrá
+usar, reproducir, adaptar y modificar estos entregables internamente o mediante
+otro proveedor para fines institucionales.
 
 Adyac conservará la titularidad de herramientas y componentes preexistentes o
 desarrollados independientemente, que deberán identificarse antes de su uso.
 Cuando sean indispensables para operar o mantener el producto, otorgará a CICUC
-la licencia definida en el Anexo C. No se incluyen componentes de machine
-learning en el alcance inicial.
+una licencia perpetua, irrevocable, mundial y libre de regalías, suficiente para
+operar, mantener y modificar el sistema, conforme al Anexo C. No se incluyen
+componentes de machine learning en el alcance inicial.
 
 Esta cláusula debe incorporarse al contrato definitivo y ser revisada por las
 partes antes de su firma.
@@ -161,10 +166,16 @@ CICUC designará responsables disponibles para validar procesos, contenidos y
 entregas, y proporcionará oportunamente documentación y datos ficticios o
 debidamente autorizados.
 
-No se tratarán datos personales o clínicos reales hasta acordar controles,
-responsabilidades, base jurídica, acceso, retención, respaldo y respuesta ante
-incidentes. La infraestructura productiva, integraciones institucionales y
-servicios de terceros se cotizarán cuando se conozcan sus requisitos.
+No se tratarán datos personales o clínicos reales hasta que el Anexo B haya sido
+aprobado y las medidas técnicas, organizativas y de seguridad allí establecidas
+se encuentren implementadas y verificadas. Durante desarrollo y pruebas se
+utilizarán preferentemente datos sintéticos o correctamente anonimizados. La
+infraestructura productiva, integraciones institucionales y servicios de terceros
+se cotizarán cuando se conozcan sus requisitos.
+
+No se incluyen infraestructura cloud, licencias de terceros, integraciones no
+identificadas en el Anexo A, soporte adicional al incluido en el Anexo A ni
+operación 24/7.
 
 ## 11. Aceptación
 

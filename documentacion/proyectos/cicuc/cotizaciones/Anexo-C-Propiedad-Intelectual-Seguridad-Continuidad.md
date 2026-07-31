@@ -5,21 +5,22 @@
 
 ## 1. Entregables específicos
 
-Pagados íntegramente los hitos aceptados, CICUC será titular de los derechos
-patrimoniales que correspondan sobre desarrollos creados específicamente por
-encargo: código fuente, migraciones, configuración específica, documentación,
-pruebas, diseños y contenidos específicos pagados. Recibirá repositorios,
-historial disponible, instrucciones de build, dependencias y accesos bajo su
-control. Podrá usar, modificar y encargar mantenimiento a terceros para fines
-institucionales.
+Adyac entregará a CICUC el código fuente, documentación, migraciones y
+configuraciones desarrolladas específicamente y pagadas en virtud del proyecto,
+cediendo a CICUC los derechos patrimoniales correspondientes en los términos del
+presente Anexo. Recibirá repositorios, historial disponible, instrucciones de
+build, dependencias y accesos bajo su control. CICUC podrá usar, reproducir,
+adaptar y modificar dichos entregables internamente o mediante otro proveedor,
+así como encargar su mantenimiento para fines institucionales.
 
 ## 2. Material preexistente de Adyac
 
 Adyac conserva herramientas, bibliotecas, plantillas, métodos y componentes
 genéricos preexistentes o desarrollados independientemente. Todo componente
 incorporado deberá identificarse previamente en un registro. Sobre componentes
-indispensables, Adyac concede licencia perpetua, irrevocable, mundial y libre de
-regalías, transferible junto al sistema o a mantenedores de CICUC.
+indispensables, Adyac concede una licencia perpetua, irrevocable, mundial y libre
+de regalías, suficiente para operar, mantener y modificar el sistema, transferible
+junto al sistema o a mantenedores de CICUC.
 
 No se incluyen componentes de machine learning en el alcance inicial. Cualquier
 incorporación futura exige un anexo específico sobre modelos, datos, evaluación
