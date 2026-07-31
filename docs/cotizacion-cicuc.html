@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Cotización CICUC — Adyac</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    :root {
+      --ink: #101612;
+      --paper: #f3f1e9;
+      --acid: #ccff4a;
+      --forest: #183c2b;
+      --muted: #687069;
+      --line: rgba(16, 22, 18, .2);
+    }
+    html, body {
+      width: 210mm;
+      height: 297mm;
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, Arial, sans-serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    body { padding: 14mm 15mm 12mm; }
+    .top {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: start;
+      padding-bottom: 8mm;
+      border-bottom: 1px solid var(--ink);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 3mm;
+      font-size: 24px;
+      font-weight: 750;
+      letter-spacing: -1.3px;
+    }
+    .mark { position: relative; width: 8mm; height: 8mm; }
+    .mark i {
+      position: absolute;
+      width: 5.2mm;
+      height: 5.2mm;
+      border: .65mm solid var(--ink);
+      border-radius: 50%;
+    }
+    .mark i:first-child { top: 0; left: 0; }
+    .mark i:last-child {
+      right: 0;
+      bottom: 0;
+      background: var(--acid);
+      mix-blend-mode: multiply;
+    }
+    .docmeta { text-align: right; font-size: 8px; line-height: 1.7; }
+    .docmeta strong { display: block; font-size: 10px; letter-spacing: .5px; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.4fr .6fr;
+      gap: 10mm;
+      padding: 10mm 0 8mm;
+    }
+    .eyebrow, .label {
+      font-family: "DejaVu Sans Mono", monospace;
+      font-size: 7px;
+      font-weight: 700;
+      letter-spacing: 1.15px;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 125mm;
+      margin: 3mm 0 4mm;
+      font-size: 32px;
+      line-height: .96;
+      letter-spacing: -1.8px;
+    }
+    .intro {
+      max-width: 119mm;
+      color: #3d453f;
+      font-size: 9px;
+      line-height: 1.55;
+    }
+    .client {
+      align-self: end;
+      border-left: 1px solid var(--line);
+      padding-left: 6mm;
+      font-size: 8px;
+      line-height: 1.55;
+    }
+    .client strong {
+      display: block;
+      margin: 2mm 0 .6mm;
+      font-size: 13px;
+      letter-spacing: -.25px;
+    }
+    .investment {
+      display: grid;
+      grid-template-columns: 1.5fr .5fr;
+      min-height: 37mm;
+      color: white;
+      background: var(--forest);
+    }
+    .amount {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6mm 8mm;
+    }
+    .amount span:first-child { color: var(--acid); }
+    .amount strong {
+      margin: 1mm 0;
+      font-size: 29px;
+      letter-spacing: -1.5px;
+    }
+    .amount small { font-size: 8px; color: #d9e3dc; }
+    .period {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6mm;
+      color: var(--ink);
+      background: var(--acid);
+    }
+    .period strong { font-size: 24px; line-height: 1; }
+    .period span { margin-top: 2mm; font-size: 8px; line-height: 1.4; }
+    .columns {
+      display: grid;
+      grid-template-columns: 1.16fr .84fr;
+      gap: 9mm;
+      padding: 8mm 0 6mm;
+    }
+    h2 {
+      margin: 2.5mm 0 3mm;
+      font-size: 14px;
+      letter-spacing: -.4px;
+    }
+    ul { list-style: none; margin: 0; padding: 0; }
+    li {
+      position: relative;
+      margin: 0 0 2mm;
+      padding-left: 4mm;
+      font-size: 8px;
+      line-height: 1.4;
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      top: 1.1mm;
+      left: 0;
+      width: 1.7mm;
+      height: 1.7mm;
+      background: var(--acid);
+      border: .25mm solid var(--ink);
+      border-radius: 50%;
+    }
+    .phases { border-top: 1px solid var(--line); }
+    .phase {
+      display: grid;
+      grid-template-columns: 17mm 1fr;
+      padding: 2.4mm 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 7.7px;
+      line-height: 1.35;
+    }
+    .phase strong { font-family: "DejaVu Sans Mono", monospace; font-size: 7px; }
+    .terms {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6mm;
+      padding: 5mm 0;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+    }
+    .term p { margin-top: 1.5mm; font-size: 7.3px; line-height: 1.4; color: #414943; }
+    .bottom {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8mm;
+      align-items: end;
+      padding-top: 6mm;
+    }
+    .note {
+      max-width: 125mm;
+      font-size: 6.8px;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+    .signature { width: 54mm; }
+    .signature .line { margin-bottom: 2mm; border-top: 1px solid var(--ink); }
+    .signature strong { display: block; font-size: 8px; }
+    .signature span { font-size: 7px; color: var(--muted); }
+    .draft {
+      display: inline-block;
+      margin-top: 2mm;
+      padding: 1.2mm 2mm;
+      background: #f1b5a6;
+      font-family: "DejaVu Sans Mono", monospace;
+      font-size: 6.4px;
+      font-weight: 700;
+      letter-spacing: .7px;
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="mark"><i></i><i></i></span>adyac</div>
+    <div class="docmeta">
+      <strong>COTIZACIÓN COMERCIAL</strong>
+      ADYAC-COT-CICUC-2026-001<br>
+      31 JUL 2026 · VÁLIDA POR 15 DÍAS
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Producto digital · Salud e investigación</p>
+      <h1>Plataforma operativa para la gestión de estudios clínicos</h1>
+      <p class="intro">Diseño, desarrollo, validación y puesta en marcha de una
+        plataforma web centralizada para CICUC. El resultado será un producto
+        funcional y verificable, no solamente un prototipo.</p>
+    </div>
+    <div class="client">
+      <span class="label">Preparado para</span>
+      <strong>CICUC</strong>
+      Centro de Investigaciones Clínicas UC<br><br>
+      <span class="label">Proveedor</span><br>
+      Adyac · Santiago, Chile
+    </div>
+  </section>
+
+  <section class="investment">
+    <div class="amount">
+      <span class="label">Inversión mensual</span>
+      <strong>$3.000.000 + IVA</strong>
+      <small>$3.570.000 CLP con IVA · pago mensual</small>
+    </div>
+    <div class="period">
+      <strong>03</strong>
+      <span>meses de ejecución<br><b>$9.000.000 neto total</b></span>
+    </div>
+  </section>
+
+  <section class="columns">
+    <div>
+      <p class="label">Alcance inicial</p>
+      <h2>Un flujo clínico centralizado y trazable</h2>
+      <ul>
+        <li>Inventario y ciclo de vida: preactivación, activos, seguimiento y cierre.</li>
+        <li>Usuarios, centros, roles, permisos y responsables por estudio.</li>
+        <li>Criterios de inclusión/exclusión, candidatos y seguimiento operativo.</li>
+        <li>Gestión de slots, listas priorizadas, pretesting y alertas.</li>
+        <li>Indicadores de reclutamiento, compromisos y actividad.</li>
+        <li>Pruebas, documentación, capacitación y puesta en marcha.</li>
+      </ul>
+    </div>
+    <div>
+      <p class="label">Plan de ejecución</p>
+      <h2>Tres incrementos verificables</h2>
+      <div class="phases">
+        <div class="phase"><strong>MES 01</strong><span>Descubrimiento, línea base aprobada, arquitectura y fundación técnica.</span></div>
+        <div class="phase"><strong>MES 02</strong><span>Desarrollo del núcleo funcional, permisos, estudios, candidatos y slots.</span></div>
+        <div class="phase"><strong>MES 03</strong><span>Cierre funcional, aceptación, capacitación y puesta en marcha.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="terms">
+    <div class="term">
+      <p class="label">Soporte incluido</p>
+      <p>12 meses desde la aceptación, 30 días de estabilización, garantía
+        correctiva de 90 días y hasta 6 horas mensuales no acumulables.</p>
+    </div>
+    <div class="term">
+      <p class="label">Propiedad intelectual</p>
+      <p>CICUC recibe el producto específico. Adyac conserva componentes
+        genéricos y de ML, otorgando licencia perpetua sobre lo incorporado.</p>
+    </div>
+    <div class="term">
+      <p class="label">Control de cambios</p>
+      <p>El alcance definitivo será la línea base aprobada. Funciones nuevas o
+        cambios materiales se evaluarán por impacto y aprobación escrita.</p>
+    </div>
+  </section>
+
+  <footer class="bottom">
+    <div class="note">
+      Valores expresados en pesos chilenos. La extensión de hasta un mes por
+      contingencias deberá negociarse por escrito y no se presume gratuita.
+      Infraestructura, licencias, integraciones nuevas y operación 24/7 no están
+      incluidas. El detalle de alcance y condiciones se encuentra en el anexo
+      comercial ADYAC-COT-CICUC-2026-001.
+      <div class="draft">COMPLETAR RUT, RAZÓN SOCIAL Y DATOS DE CICUC ANTES DE EMITIR</div>
+    </div>
+    <div class="signature">
+      <div class="line"></div>
+      <strong>Fabián Ignacio Ortega Llanten</strong>
+      <span>Fundador · Producto y tecnología<br>hola@adyac.cl · adyac.cl</span>
+    </div>
+  </footer>
+</body>
+</html>
