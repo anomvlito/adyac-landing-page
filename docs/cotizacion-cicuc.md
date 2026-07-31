@@ -83,11 +83,11 @@ hayan sido definidos, autorizados y acordados por escrito.
 - criterios de aceptación, selección y manejo de candidatos;
 - pruebas continuas y validación con usuarios.
 
-### Mes 3 — Puesta en marcha y beta testing
+### Mes 3 — Puesta en marcha y marcha blanca
 
 - historias de usuario incluidas en la línea base aprobada;
 - indicadores, alertas y trazabilidad acordados;
-- beta testing y pruebas de aceptación;
+- marcha blanca y pruebas de aceptación;
 - correcciones, documentación y capacitación;
 - puesta en marcha y entrega.
 
