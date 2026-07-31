@@ -16,9 +16,12 @@
 
 ## 2. Cliente
 
-- **Institución:** Centro de Investigaciones Clínicas UC — CICUC
-- **Razón social:** `[COMPLETAR]`
-- **RUT:** `[COMPLETAR]`
+- **Institución solicitante:** Centro de Investigaciones Clínicas UC — CICUC,
+  Facultad de Medicina
+- **Razón social:** Pontificia Universidad Católica de Chile
+- **RUT:** 81.698.900-0
+- **Dirección institucional:** Av. Libertador Bernardo O'Higgins 340, Santiago
+- **Dirección CICUC:** Portugal 61, Santiago
 - **Contacto responsable:** `[COMPLETAR]`
 - **Correo:** `[COMPLETAR]`
 
