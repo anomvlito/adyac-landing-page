@@ -1,4 +1,4 @@
-const Arrow = () => <span aria-hidden="true">↗</span>;
+const Arrow = () => <span className="decorativeArrow" aria-hidden="true">↗</span>;
 
 const services = [
   {
