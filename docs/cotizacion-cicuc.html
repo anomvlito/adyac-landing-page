@@ -24,7 +24,7 @@
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
-    body { padding: 11mm 15mm 4mm; }
+    body { padding: 10mm 15mm 0; }
     .mono, .label {
       font-family: "DejaVu Sans Mono", monospace;
       text-transform: uppercase;
@@ -76,7 +76,7 @@
     .entity { min-height: 25mm; }
     .label {
       margin: 0 0 2.5mm;
-      font-size: 7.3px;
+      font-size: 8px;
       font-weight: 700;
     }
     .entity h2 {
@@ -87,8 +87,8 @@
     }
     .entity p {
       margin: .6mm 0;
-      font-size: 8.2px;
-      line-height: 1.45;
+      font-size: 9px;
+      line-height: 1.35;
     }
     .folio {
       display: grid;
@@ -106,10 +106,10 @@
     .folio span {
       display: block;
       margin-bottom: 2mm;
-      font-size: 6.8px;
+      font-size: 7.4px;
       color: var(--muted);
     }
-    .folio strong { font-size: 8.8px; line-height: 1.3; }
+    .folio strong { font-size: 9.2px; line-height: 1.3; }
     .subject {
       padding: 5mm 6mm;
       color: white;
@@ -126,7 +126,7 @@
       max-width: 155mm;
       margin: 0;
       color: #d9e3dc;
-      font-size: 8.3px;
+      font-size: 8.8px;
       line-height: 1.45;
     }
     table {
@@ -134,11 +134,11 @@
       border-collapse: collapse;
       table-layout: fixed;
     }
-    .items { margin-top: 6mm; }
+    .items { margin-top: 4mm; }
     th {
       padding: 2.8mm 2mm;
       font-family: "DejaVu Sans Mono", monospace;
-      font-size: 6.8px;
+      font-size: 7.4px;
       text-align: left;
       text-transform: uppercase;
       letter-spacing: .6px;
@@ -147,7 +147,7 @@
     }
     td {
       padding: 3mm 2mm;
-      font-size: 8px;
+      font-size: 8.6px;
       line-height: 1.4;
       vertical-align: top;
       border-bottom: 1px solid var(--line);
@@ -156,27 +156,27 @@
     .description strong {
       display: block;
       margin-bottom: 1mm;
-      font-size: 8.2px;
+      font-size: 8.8px;
     }
     .description span { color: var(--muted); }
     .totals {
       display: grid;
       grid-template-columns: 1fr 64mm;
       gap: 10mm;
-      padding: 4mm 0 5mm;
+      padding: 3mm 0 3mm;
     }
     .payment {
       padding-top: 1mm;
-      font-size: 7.8px;
+      font-size: 8.4px;
       line-height: 1.55;
     }
-    .payment strong { font-size: 8.3px; }
+    .payment strong { font-size: 8.8px; }
     .sum { width: 100%; }
     .sum div {
       display: grid;
       grid-template-columns: 1fr auto;
       padding: 1.4mm 2mm;
-      font-size: 8.2px;
+      font-size: 8.8px;
     }
     .sum .grand {
       margin-top: 1mm;
@@ -190,7 +190,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 9mm;
-      padding: 4mm 0;
+      padding: 2.5mm 0;
       border-top: 1px solid var(--ink);
       border-bottom: 1px solid var(--ink);
     }
@@ -204,7 +204,7 @@
       position: relative;
       margin: 0 0 1.4mm;
       padding-left: 3.5mm;
-      font-size: 7.6px;
+      font-size: 8.2px;
       line-height: 1.35;
     }
     li::before {
@@ -222,20 +222,20 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 6mm;
-      padding: 4mm 0;
+      padding: 2.5mm 0;
     }
-    .condition h3 { margin: 0 0 1.2mm; font-size: 7.5px; }
+    .condition h3 { margin: 0 0 1.2mm; font-size: 8px; }
     .condition p {
       margin: 0;
       color: #434b45;
-      font-size: 7.1px;
+      font-size: 7.8px;
       line-height: 1.4;
     }
     .legal {
-      padding: 3mm 0;
+      padding: 1.5mm 0;
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 6.4px;
+      font-size: 7px;
       line-height: 1.45;
     }
     .note {
@@ -251,14 +251,14 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16mm;
-      padding-top: 2mm;
+      padding-top: 0;
     }
     .signature {
-      padding-top: 2mm;
+      padding-top: 1mm;
       border-top: 1px solid var(--ink);
     }
-    .signature strong { display: block; font-size: 8px; }
-    .signature span { font-size: 6.8px; color: var(--muted); }
+    .signature strong { display: block; font-size: 8.6px; }
+    .signature span { font-size: 7.4px; color: var(--muted); }
     footer {
       display: flex;
       justify-content: space-between;
